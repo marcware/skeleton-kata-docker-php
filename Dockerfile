@@ -7,3 +7,4 @@ RUN docker-php-ext-enable xdebug
 RUN echo "xdebug.remote_enable=1" >> /usr/local/etc/php/php.ini
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 #CMD composer install --no-interaction
+#ENTRYPOINT ["/bin/bash"]

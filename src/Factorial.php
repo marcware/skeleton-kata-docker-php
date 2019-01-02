@@ -3,7 +3,7 @@
 
 namespace Kata;
 
-class FizzBuzz
+class Factorial
 {
     public function returnTrue()
     {

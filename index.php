@@ -7,10 +7,9 @@
  */
 
 
-$number = 5;
-$factorial = 1;
+require_once 'src/Factorial.php';
 
-for ($i = $number; $i >= 1; $i--) {
-    $factorial= $factorial * $i;
-    echo $i.'-->'.$factorial. '<br>';
-}
+
+$factorial = new \Kata\Factorial();
+$a = $factorial->returnTrue();
+echo $a;

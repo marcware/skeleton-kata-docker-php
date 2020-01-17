@@ -9,6 +9,7 @@ use Kata\IsNoNumberException;
 class KataTest extends \PHPUnit_Framework_TestCase
 {
 
+    
     /** @test */
     public function nothing()
     {

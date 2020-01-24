@@ -4,24 +4,19 @@
 namespace Kata\Test;
 
 use Kata\Factorial;
-use Kata\IsNoNumberException;
+
 
 class KataTest extends \PHPUnit_Framework_TestCase
 {
 
-    
-    /** @test */
-    public function nothing()
-    {
-        $this->assertTrue(true);
-    }
+
 
     /** @test */
-    public function returnTrue()
+    public function send_one_and_return_one()
     {
         $kata = new Factorial();
 
-        $this->assertEquals(true, $kata->returnTrue());
+        $this->assertEquals(1, $kata->checkNumber(1));
     }
 
 

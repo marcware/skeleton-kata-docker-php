@@ -8,6 +8,7 @@ docker-build:
 	@docker exec -it kata-test bash -c "composer install --prefer-source --no-interaction"
 
 docker-down:
+	@docker exec -it kata-test bash -c "rm -rf vendor/"
 	docker-compose down
 
 docker-start:

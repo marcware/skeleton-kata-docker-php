@@ -5,8 +5,8 @@ namespace Kata;
 
 class Factorial
 {
-    public function returnTrue()
+    public function checkNumber($number)
     {
-        return true;
+        return $number;
     }
 }

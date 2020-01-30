@@ -11,5 +11,5 @@ require_once 'src/Factorial.php';
 
 
 $factorial = new \Kata\Factorial();
-$a = $factorial->returnTrue();
+$a = $factorial->checkNumber();
 echo $a;

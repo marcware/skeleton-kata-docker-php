@@ -22,6 +22,9 @@ docker-coverage:
 docker-ssh:
 	@docker exec -it kata-test bash
 
+docker-stop-all:
+	docker stop $(docker ps -a -q)
+
 define HELP
 # Docker
 	- default:

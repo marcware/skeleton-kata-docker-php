@@ -1,10 +1,18 @@
 {
-  "name": "skeleton-kata-docker-php",
+  "authors": [
+    {
+      "name": "Marcos Palacios",
+      "email": "m.palacios@geekshubs.com",
+      "homepage": "https://geekshubsacademy.com/",
+      "role": "Developer"
+    }
+
+  ],
   "require": {
-    "php": "^7.1"
+    "php": "7.4.*"
   },
   "require-dev": {
-    "phpunit/phpunit": "^7"
+    "phpunit/phpunit": "9.5.*"
   },
   "autoload": {
     "psr-4": {

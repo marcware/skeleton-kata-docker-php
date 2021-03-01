@@ -1,15 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: marcware
- * Date: 24/12/18
- * Time: 12:37
- */
 
+declare(strict_types=1);
 
-require_once 'src/Factorial.php';
+//phpinfo();
+namespace Kata;
+use Kata\Factorial;
 
-
-$factorial = new \Kata\Factorial();
-$a = $factorial->checkNumber();
-echo $a;
+$factorial = new Factorial();
+echo $factorial->checkNumber(1);

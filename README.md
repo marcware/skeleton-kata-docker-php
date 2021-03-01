@@ -22,3 +22,6 @@ Para ejecutar el test, dentro del contenedor
 ```
 $ ./vendor/bin/phpunit tests/KataTest.php
 ```
+
+##Make
+Existe un fichero makefile para los comando más utilizados en la aplicación

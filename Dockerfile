@@ -12,6 +12,9 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
     php composer-setup.php --install-dir=/usr/local/bin --filename=composer && \
     php -r "unlink('composer-setup.php');"
 
+RUN docker-php-ext-install pdo pdo_mysql mysqli
+RUN docker-php-ext-enable pdo pdo_mysql mysqli
+
 #XDEBUG
 RUN pecl install xdebug-2.9.3 && \
     docker-php-ext-enable xdebug && \

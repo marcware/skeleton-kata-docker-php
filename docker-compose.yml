@@ -9,3 +9,15 @@ services:
       - ./:/var/www/html
     environment:
       XDEBUG_CONFIG: remote_host=host.docker.internal
+
+  db_kata:
+    image: mysql:5.7
+    container_name: kata-test-db
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: some_palabro
+      MYSQL_DATABASE: kata_db
+      MYSQL_USER: kata
+      MYSQL_PASSWORD: wordpress
+

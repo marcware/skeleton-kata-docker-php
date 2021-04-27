@@ -1,0 +1,4 @@
+User:
+  user{1..10}:
+    username: '<username()>'
+    email: '<email()>'

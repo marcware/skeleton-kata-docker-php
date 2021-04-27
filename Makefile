@@ -4,8 +4,14 @@ default:
 
 # Docker commands
 docker-build:
+	docker-compose build -d
+
+docker-up:
 	docker-compose up -d
-	@docker exec -it kata-test bash -c "composer install --prefer-source --no-interaction"
+
+composer-install:
+	docker exec -it kata-test bash -c "composer install --prefer-source --no-interaction"
+
 
 docker-down:
 	docker-compose down
@@ -24,6 +30,9 @@ docker-ssh:
 
 docker-stop-all:
 	@docker stop $(docker ps -a -q)
+
+docker-ip:
+	docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' kata-test-db
 
 define HELP
 # Docker

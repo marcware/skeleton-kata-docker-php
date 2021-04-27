@@ -29,7 +29,7 @@ docker-ssh:
 	@docker exec -it kata-test bash
 
 docker-stop-all:
-	@docker stop $(docker ps -a -q)
+	@docker stop $(docker ps -a -q) 
 
 docker-ip:
 	docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' kata-test-db

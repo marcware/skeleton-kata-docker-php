@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Kata\Test;
 
+use Kata\Entity\Photo;
 use Kata\Entity\User;
 use Kata\Repository\UserRepository;
 use PDO;
@@ -32,9 +33,7 @@ class UserRepositoryTest extends TestCase
 
     public function setUp():void {
         $user = new User('Geeky','info@geekshubs.com');
-        $user->addPhotos([
-                            ['']
-                         ]);
+        $user->addPhotos();
         $this->data['user1'] = new User('Geeky','info@geekshubs.com');
         $this->userRepository = new UserRepository(self::$pdo);
     }

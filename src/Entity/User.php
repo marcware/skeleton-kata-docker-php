@@ -17,8 +17,6 @@ class User {
     }
 
 
-
-
     public function getPhotos() {
         return $this->photos;
     }
